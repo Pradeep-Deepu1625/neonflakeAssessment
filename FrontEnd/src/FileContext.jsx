@@ -10,6 +10,7 @@ export const FileProvider = ({ children }) => {
     try {
       const { data } = await axios.get('http://localhost:3000/Neonflake');
       setDisplay(data);
+      console.log(data)
     } catch (error) {
       console.error("Error fetching files:", error);
     }
